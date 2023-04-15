@@ -1,8 +1,14 @@
 import styles from '@/styles/components/Hero/hero.module.scss'
+import { Inter } from 'next/font/google'
+
+const inter = Inter({
+	subsets: ['latin'],
+	weight: ['400', '500', '600', '700']
+})
 
 export default function Hero (): JSX.Element {
 	return (
-		<section className={`${styles.backgroundImg}`}>
+		<section className={`${inter.className} ${styles.backgroundImg}`}>
 			<div className={`${styles.backgroundColor}`}>
 				<div className={`${styles.container}`}>
 					<section className={`${styles.introText}`}>
