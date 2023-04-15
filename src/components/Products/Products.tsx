@@ -3,6 +3,7 @@ import searchIcon from '../../../public/searchIcon.png'
 import styles from '@/styles/components/Products/products.module.scss'
 import Cart from '../Cart/Cart';
 import { Inter } from 'next/font/google';
+import ProductCard from './ProductCard/ProductCard';
 
 const inter = Inter({
 	subsets: ['latin'],
@@ -29,9 +30,13 @@ export default function Products (): JSX.Element {
 				</fieldset>
 			</section>
 
-			<div>
+			<main className={`${inter.className} ${styles.layout}`}>
+				<ul className={styles.productsList}>
+					<ProductCard/>
+				</ul>
+				
 				<Cart/>
-			</div>
+			</main>
 		</>
 	)
 }
