@@ -40,6 +40,7 @@
 }
 
 .searchButton {
+    width: 40px;
 	background-color: var(--brand2);
     padding: 8px;
     border-bottom-right-radius: 4px;
@@ -51,5 +52,6 @@
 }
 
 .searchIcon{
-	max-height: 20px;
+    width: 24px;
+	height: 20px;
 }
