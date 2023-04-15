@@ -4,7 +4,6 @@ import { Inter, Bungee_Inline } from 'next/font/google'
 const inter = Inter({
 	subsets: ['latin'],
 	weight: ['400', '500', '600', '700']
-
 })
 
 const bungeeInline = Bungee_Inline({
