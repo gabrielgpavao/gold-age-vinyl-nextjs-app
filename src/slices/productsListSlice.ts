@@ -14,12 +14,12 @@ export const productsListSlice = createSlice({
 	name: 'productsList',
 	initialState,
 	reducers: {
-		getProducts: (state, action: PayloadAction<iProductData[]>) => {
+		setProducts: (state, action: PayloadAction<iProductData[]>) => {
 			state.payload = action.payload
 		}
 	}
 })
 
-export const { getProducts } = productsListSlice.actions
+export const { setProducts } = productsListSlice.actions
 export const selectproductsListValue = (state: RootState) => state.productsList.payload
 export default productsListSlice.reducer

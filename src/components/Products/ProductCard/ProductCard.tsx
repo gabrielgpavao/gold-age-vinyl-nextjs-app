@@ -1,6 +1,7 @@
 import styles from '@/styles/components/Products/ProductCard/productCard.module.scss'
 import { Inter } from 'next/font/google'
 import Image from 'next/image'
+import { iProductData } from '@/database'
 import acdc from '../../../../public/acdc.jpg'
 
 const inter = Inter({
@@ -8,18 +9,22 @@ const inter = Inter({
 	weight: ['400', '500', '600', '700']
 })
 
-export default function ProductCard (): JSX.Element {
+interface iProductCardProps {
+	product: iProductData
+}
+
+export default function ProductCard ({ product }: iProductCardProps): JSX.Element {
     return (
-        <li id="id" className={`${inter.className} ${styles.productCard}`}>
+        <li id={product.id.toString()} className={`${inter.className} ${styles.productCard}`}>
             <div>
-                <Image src={acdc} className={styles.cardAlbumImg} alt="name" title="name"/>
-                <h3>{"name"}</h3>
-                <small>{"band"}</small>
-                <span>{"category"}</span>
+                <Image src={acdc} className={styles.cardAlbumImg} alt={product.name} title={product.name}/>
+                <h3>{product.name}</h3>
+                <small>{product.band}</small>
+                <span>{product.category}</span>
             </div>
 
             <div>
-                <p className={styles.price}>R$ {"price"}</p>
+                <p className={styles.price}>R$ {product.price}</p>
                 <small>Frete grátis</small>
                 <div className={styles.addToCartDiv}>
                     <button className={styles.addToCartButton}>Adicionar ao carrinho</button>

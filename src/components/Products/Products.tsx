@@ -4,6 +4,8 @@ import styles from '@/styles/components/Products/products.module.scss'
 import Cart from '../Cart/Cart';
 import { Inter } from 'next/font/google';
 import ProductCard from './ProductCard/ProductCard';
+import { useSelector } from 'react-redux'
+import { selectproductsListValue } from '@/slices/productsListSlice';
 
 const inter = Inter({
 	subsets: ['latin'],
@@ -11,6 +13,8 @@ const inter = Inter({
 })
 
 export default function Products (): JSX.Element {
+	const productsList = useSelector(selectproductsListValue)
+	
 	return (
 		<>
 			<section className={`${inter.className} ${styles.container}`}>
@@ -32,7 +36,7 @@ export default function Products (): JSX.Element {
 
 			<main className={`${inter.className} ${styles.layout}`}>
 				<ul className={styles.productsList}>
-					<ProductCard/>
+					{productsList.map((product) => <ProductCard key={product.id} product={product}/>)}
 				</ul>
 				
 				<Cart/>
