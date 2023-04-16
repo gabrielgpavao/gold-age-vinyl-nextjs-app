@@ -23,5 +23,5 @@ export const cartTotalPriceSlice = createSlice({
 })
 
 export const { increment, decrement } = cartTotalPriceSlice.actions
-export const selectValue = (state: RootState) => state.cartTotalPrice.value
+export const selectCartTotalPriceValue = (state: RootState) => state.cartTotalPrice.value
 export default cartTotalPriceSlice.reducer
