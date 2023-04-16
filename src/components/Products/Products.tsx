@@ -4,7 +4,6 @@ import styles from '@/styles/components/Products/products.module.scss'
 import Cart from '../Cart/Cart';
 import { Inter } from 'next/font/google';
 import ProductCard from './ProductCard/ProductCard';
-import { useEffect, useState } from 'react';
 
 const inter = Inter({
 	subsets: ['latin'],
