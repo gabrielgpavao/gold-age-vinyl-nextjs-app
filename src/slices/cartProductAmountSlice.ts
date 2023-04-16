@@ -13,15 +13,15 @@ export const cartProductAmountSlice = createSlice({
 	name: 'cartProductAmount',
 	initialState,
 	reducers: {
-		increment: (state: RootState) => {
-			state.value += 1
+		increment: (state) => {
+			state.payload += 1
 		},
-		decrement: (state: RootState) => {
-			state.value -= 1
+		decrement: (state) => {
+			state.payload -= 1
 		}
 	}
 })
 
 export const { increment, decrement } = cartProductAmountSlice.actions
-export const selectCartProductAmountValue = (state: RootState) => state.cartProductAmount.value
+export const selectCartProductAmountValue = (state: RootState) => state.cartProductAmount.payload
 export default cartProductAmountSlice.reducer

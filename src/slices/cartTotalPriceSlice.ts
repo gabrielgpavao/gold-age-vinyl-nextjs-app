@@ -13,15 +13,15 @@ export const cartTotalPriceSlice = createSlice({
 	name: 'cartTotalPrice',
 	initialState,
 	reducers: {
-		increment: (state: RootState, action: PayloadAction<number>) => {
-			state.value += action.payload
+		increment: (state, action: PayloadAction<number>) => {
+			state.payload += action.payload
 		},
-		decrement: (state: RootState, action: PayloadAction<number>) => {
-			state.value -= action.payload
+		decrement: (state, action: PayloadAction<number>) => {
+			state.payload -= action.payload
 		}
 	}
 })
 
 export const { increment, decrement } = cartTotalPriceSlice.actions
-export const selectCartTotalPriceValue = (state: RootState) => state.cartTotalPrice.value
+export const selectCartTotalPriceValue = (state: RootState) => state.cartTotalPrice.payload
 export default cartTotalPriceSlice.reducer
