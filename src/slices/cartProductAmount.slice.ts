@@ -22,6 +22,6 @@ export const cartProductAmountSlice = createSlice({
 	}
 })
 
-export const {} = cartProductAmountSlice.actions
+export const { increment, decrement } = cartProductAmountSlice.actions
 export const selectCardProductAmountValue = (state: RootState) => state.cartProductAmount.value
 export default cartProductAmountSlice.reducer
