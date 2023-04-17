@@ -1,3 +1,9 @@
+.shadow {
+	height: 50px;
+	width: 100%;
+	box-shadow: 0px -42px 36px 4px rgba(0,0,0,0.67);
+}
+
 .container {
     width: 100%;
     max-width: 1240px;
@@ -6,7 +12,6 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
-    margin-top: 20px;
 }
 
 .sectionTitle{
