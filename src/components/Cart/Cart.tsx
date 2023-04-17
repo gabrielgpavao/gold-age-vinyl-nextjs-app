@@ -1,17 +1,21 @@
 import styles from '@/styles/components/Cart/cart.module.scss'
 import { Inter } from 'next/font/google'
+import CartProductsList from './CartProductsList/CartProductsList'
 
 const inter = Inter({
 	subsets: ['latin'],
 	weight: ['400', '500', '600', '700']
 })
 
-export default function Cart ():JSX.Element {
+export default function Cart ():JSX.Element {	
     return (
         <aside className={`${inter.className} ${styles.cart}`}>
             <h2 className={styles.cartTitle}>Carrinho de compras</h2>
+
             <div>
                 <p className={styles.emptyCart}>Adicionar itens ao carrinho</p>
+
+				<CartProductsList/>
             </div>
 
             <section className={styles.cartInfo}>

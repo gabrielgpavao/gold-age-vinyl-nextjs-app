@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: space-between;
     position:sticky;
-    top: 10px;
+    top: 115px;
 }
 
 .cartTitle {
@@ -51,8 +51,6 @@
 }
 
 .albumImg {
-    width: 60px;
-    height: 63px;
     border-radius: 5px;
 }
 
@@ -79,15 +77,18 @@
 }
 
 .trashIcon {
-    width: 13px;
-    height: 15px;
+    width: 35px;
+    height: 35px;
     padding: 10px;
     border-radius: 7px;
     background-color: #929292;
+	background-image: url(../../../../public/trashIcon.png);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .trashIcon:hover {
-    background-color: #707070;
+    background-size: 14px;
 }
 
 .cartInfo {
