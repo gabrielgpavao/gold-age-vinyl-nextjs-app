@@ -1,11 +1,13 @@
 import { iProductData } from '@/database'
+import { removeCartProduct } from '@/slices/cartProductsList.slice'
 import { selectCartProductsListValue } from '@/slices/cartProductsList.slice'
 import styles from '@/styles/components/Cart/cart.module.scss'
 import Image from 'next/image'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
   
 export default function CartProductsList (): JSX.Element {
 	const products: Array<iProductData> = useSelector(selectCartProductsListValue)
+	const dispatch = useDispatch()
 	
 	return (
 		<ul>
@@ -18,7 +20,10 @@ export default function CartProductsList (): JSX.Element {
 							<p>{product.band}</p>
 							<small>R$ {product.price}</small>
 						</div>
-						<button className={styles.trashIcon}></button>
+						<button
+							className={styles.trashIcon}
+							onClick={() => { dispatch(removeCartProduct(product.id)) }}
+						></button>
 					</li>
 				))
 			}

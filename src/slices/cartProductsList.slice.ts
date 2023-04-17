@@ -14,12 +14,16 @@ export const cartProductsListSlice = createSlice({
 	name: 'cartProductsList',
 	initialState,
 	reducers: {
-		setCartProduct: (state, action: PayloadAction<iProductData[]>) => {
-			state.payload = action.payload
+		setCartProduct: (state, action: PayloadAction<iProductData>) => {
+			state.payload.push(action.payload)
+		},
+		removeCartProduct: (state, action: PayloadAction<number>) => {
+			const productIndex = state.payload.findIndex((product) => product.id === action.payload)
+			state.payload.splice(productIndex, 1)
 		}
 	}
 })
 
-export const { setCartProduct } = cartProductsListSlice.actions
+export const { setCartProduct, removeCartProduct } = cartProductsListSlice.actions
 export const selectCartProductsListValue = (state: RootState) => state.cartProductsList.payload
 export default cartProductsListSlice.reducer
