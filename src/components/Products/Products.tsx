@@ -26,6 +26,8 @@ export default function Products (): JSX.Element {
 	
 	return (
 		<>
+			<div className={styles.shadow}></div>
+		
 			<section className={`${inter.className} ${styles.container}`}>
 				<h2 className={styles.sectionTitle}>
 					Discos de Vinil
