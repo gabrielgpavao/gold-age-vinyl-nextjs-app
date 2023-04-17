@@ -8,6 +8,7 @@
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
+	padding: 0 0.6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,14 +24,15 @@
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
+	padding: 0 0.6rem;
     display: flex;
     justify-content: space-between;
+	gap: 15px;
 }
 
 .productsList{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);
     max-width: 786px;
     gap: 15px;
     margin-bottom: 50px;
