@@ -6,6 +6,8 @@ import { Inter } from 'next/font/google';
 import ProductCard from './ProductCard/ProductCard';
 import { useSelector } from 'react-redux'
 import { selectProductsListValue } from '@/slices/productsList.slice';
+import { iProductData } from '@/database';
+import { selectFilterByCategoryValue } from '@/slices/filterByCategory.slice';
 
 const inter = Inter({
 	subsets: ['latin'],
@@ -13,7 +15,14 @@ const inter = Inter({
 })
 
 export default function Products (): JSX.Element {
-	const productsList = useSelector(selectProductsListValue)
+	const filterByCategory = useSelector(selectFilterByCategoryValue)
+	const productsList: Array<iProductData> = useSelector(selectProductsListValue).filter((product) => {
+		if (filterByCategory !== 'default') {
+			return product.category === filterByCategory
+		}
+		
+		return product
+	})
 	
 	return (
 		<>
