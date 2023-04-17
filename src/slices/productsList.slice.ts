@@ -21,5 +21,5 @@ export const productsListSlice = createSlice({
 })
 
 export const { setProducts } = productsListSlice.actions
-export const selectproductsListValue = (state: RootState) => state.productsList.payload
+export const selectProductsListValue = (state: RootState) => state.productsList.payload
 export default productsListSlice.reducer

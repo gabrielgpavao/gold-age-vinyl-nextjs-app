@@ -5,7 +5,7 @@ import Cart from '../Cart/Cart';
 import { Inter } from 'next/font/google';
 import ProductCard from './ProductCard/ProductCard';
 import { useSelector } from 'react-redux'
-import { selectproductsListValue } from '@/slices/productsListSlice';
+import { selectProductsListValue } from '@/slices/productsList.slice';
 
 const inter = Inter({
 	subsets: ['latin'],
@@ -13,7 +13,7 @@ const inter = Inter({
 })
 
 export default function Products (): JSX.Element {
-	const productsList = useSelector(selectproductsListValue)
+	const productsList = useSelector(selectProductsListValue)
 	
 	return (
 		<>

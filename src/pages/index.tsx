@@ -5,7 +5,7 @@ import Products from '@/components/Products/Products'
 import { GetStaticProps } from 'next'
 import { iProductData } from '@/database'
 import { useDispatch } from 'react-redux'
-import { setProducts } from '@/slices/productsListSlice'
+import { setProducts } from '@/slices/productsList.slice'
 import { useEffect } from 'react'
 
 interface iHomeProductProps {
