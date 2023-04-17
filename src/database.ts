@@ -14,7 +14,7 @@ export const database: Array<iProductData> = [
         band: 'Led Zeppelin',
         name: 'Mothership',
         category: "Rock Classics",
-        albumImg: './assets/img/rock/LedZeppelin-Mothership.jpg',
+        albumImg: 'https://m.media-amazon.com/images/I/91P0awybuML._AC_UL320_.jpg',
         price: 350.00
     },
     {
@@ -30,7 +30,7 @@ export const database: Array<iProductData> = [
         band: 'Pink Floyd',
         name: 'Animals',
         category: "Rock Classics",
-        albumImg: './assets/img/rock/PinkFloyd-Animals.jpg',
+        albumImg: 'https://m.media-amazon.com/images/I/918SLRbvSfL._AC_UL320_.jpg',
         price: 370.00
     },
     {
@@ -38,7 +38,7 @@ export const database: Array<iProductData> = [
         band: 'Cream',
         name: 'Disraeli Gears',
         category: "Rock Classics",
-        albumImg: './assets/img/rock/Cream-DisraeliGears.jpg',
+        albumImg: 'https://m.media-amazon.com/images/I/91ZABdpeywL._AC_UL320_.jpg',
         price: 325.00
     },
     {
@@ -46,7 +46,7 @@ export const database: Array<iProductData> = [
         band: 'Metallica',
         name: 'Ride The Lightning',
         category: "Heavy Metal",
-        albumImg: './assets/img/rock/Metallica-RideTheLightning.jpg',
+        albumImg: 'https://m.media-amazon.com/images/I/71VpqI19tpL._AC_UL320_.jpg',
         price: 280.00
     },
     {
@@ -54,7 +54,7 @@ export const database: Array<iProductData> = [
         band: 'Black Sabbath',
         name: 'Paranoid',
         category: "Heavy Metal",
-        albumImg: './assets/img/rock/BlackSabbath-Paranoid.jpg',
+        albumImg: 'https://m.media-amazon.com/images/I/61EvGaXSOVL._AC_UL320_.jpg',
         price: 290.00
     },
     {
@@ -62,7 +62,7 @@ export const database: Array<iProductData> = [
         band: 'Deep Purple',
         name: 'Purpendicular',
         category: "Heavy Metal",
-        albumImg: './assets/img/rock/DeepPurple-Purpendicular.jpg',
+        albumImg: 'https://m.media-amazon.com/images/I/81R2zy3h5IL._AC_UL320_.jpg',
         price: 350.00
     },
     {
@@ -70,7 +70,7 @@ export const database: Array<iProductData> = [
         band: 'AC/DC',
         name: 'High Voltage',
         category: "Heavy Metal",
-        albumImg: './assets/img/rock/ACDC-HighVoltage.jpg',
+        albumImg: 'https://m.media-amazon.com/images/I/51lcSGjzc0L._AC_UL320_.jpg',
         price: 220.00
     },
     {
@@ -78,7 +78,7 @@ export const database: Array<iProductData> = [
         band: 'Creedence Clear Water',
         name: 'Pendulum',
         category: "Soft Rock",
-        albumImg: './assets/img/rock/CreedenceClearwaterRevival-Pendulum.jpg',
+        albumImg: 'https://m.media-amazon.com/images/I/71-or3I6YJL._AC_UL320_.jpg',
         price: 330.00
     },
     {
@@ -86,7 +86,7 @@ export const database: Array<iProductData> = [
         band: 'The Beatles',
         name: 'Help',
         category: "Soft Rock",
-        albumImg: './assets/img/rock/TheBeatles-Help.jpg',
+        albumImg: 'https://m.media-amazon.com/images/I/816hQnNLGFL._AC_UL320_.jpg',
         price: 340.00
     },
     {
@@ -94,7 +94,7 @@ export const database: Array<iProductData> = [
         band: 'Red Hot Chili Peppers',
         name: 'Californication',
         category: "Soft Rock",
-        albumImg: './assets/img/rock/RedHotChiliPeppers-Californication.jpg',
+        albumImg: 'https://m.media-amazon.com/images/I/81kKCMLtpBL._AC_UL320_.jpg',
         price: 210.00
     },
     {
@@ -102,7 +102,7 @@ export const database: Array<iProductData> = [
         band: 'Eagles',
         name: 'Hotel California',
         category: "Soft Rock",
-        albumImg: './assets/img/rock/Eagles-HotelCalifornia.jpg',
+        albumImg: 'https://m.media-amazon.com/images/I/51Qie8IUzgL._AC_UL320_.jpg',
         price: 350.00
     }
 ]
