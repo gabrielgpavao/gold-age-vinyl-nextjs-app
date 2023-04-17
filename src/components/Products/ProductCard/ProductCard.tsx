@@ -2,7 +2,6 @@ import styles from '@/styles/components/Products/ProductCard/productCard.module.
 import { Inter } from 'next/font/google'
 import Image from 'next/image'
 import { iProductData } from '@/database'
-import acdc from '../../../../public/acdc.jpg'
 
 const inter = Inter({
 	subsets: ['latin'],
@@ -17,7 +16,7 @@ export default function ProductCard ({ product }: iProductCardProps): JSX.Elemen
     return (
         <li id={product.id.toString()} className={`${inter.className} ${styles.productCard}`}>
             <div>
-                <Image src={acdc} className={styles.cardAlbumImg} alt={product.name} title={product.name}/>
+                <Image src={product.albumImg} className={styles.cardAlbumImg} alt={product.name} title={product.name} width={220} height={210}/>
                 <h3>{product.name}</h3>
                 <small>{product.band}</small>
                 <span>{product.category}</span>
