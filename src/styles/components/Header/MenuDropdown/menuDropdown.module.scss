@@ -1,0 +1,60 @@
+.menuModal {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+	inset: 0;
+	background-color: #0000006b;
+}
+
+.menuModal section {
+	width: 220px;
+	height: fit-content;
+	padding: 20px;
+	position: relative;
+	top: 70px;
+	right: 30px;
+	border-radius:6px;
+	background-color: var(--grey1);
+}
+
+.menuModal div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+	font-size: 20px;
+	
+	h2 {
+		font-weight: 600;
+		color: var(--brand1);
+	}
+	
+	span {
+		color: var(--brand1);
+		cursor: pointer;
+	}
+}
+
+
+.menuModal ul {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	
+}
+
+.menuModal li {
+	width: 100%;
+	border-bottom: 1px solid #fff;
+	line-height: 30px;
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.menuModal li:hover {
+	color: var(--brand1);
+}
