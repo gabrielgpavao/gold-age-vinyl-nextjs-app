@@ -1,0 +1,130 @@
+.cartModal {
+	height: 100vh;
+	width: 100vw;
+	padding: 40px 11px 0 11px;
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	inset: 0;
+	background-color: #0000006b;
+}
+
+.emptyCart {
+    text-align: center;
+    margin-right: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(94, 94, 94);
+}
+
+.cart {
+    padding: 15px 0 15px 15px;
+    margin-bottom: 50px;
+    background-color: var(--grey1);
+    width: 400px;
+    height: 460px;
+    max-height: 460px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart div:first-child {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 15px;
+	padding: 10px;
+	border-radius: 4px;
+	background-color: #b16b00;
+}
+
+.cartTitle {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cart > div span {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.cartInfo {
+    background-color: #b16b00;
+}
+
+.cart ul {
+    height: 293px;
+    overflow-y: auto;
+}
+
+.cartProduct {
+    background-color: rgb(24 26 27);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top: 1px solid rgb(70, 70, 70);
+    margin-right: 15px;
+	gap: 15px;
+}
+
+.cartProduct div {
+	width: -webkit-fill-available;
+}
+
+.albumImg {
+    border-radius: 5px;
+}
+
+.cartProduct h3{
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 2px;
+    line-height: 23px;
+}
+
+.cartProduct p{
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(188, 182, 173);
+    margin-bottom: 8px;
+}
+
+.cartProduct small {
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 30px;
+    color: rgb(188, 182, 173);
+}
+
+.trashIcon {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #929292;
+	background-image: url(../../../../public/trashIcon.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.trashIcon:hover {
+    background-size: 14px;
+}
+
+.cartInfo {
+    border-radius: 4px;
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.productsAmount, .totalPrice {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}

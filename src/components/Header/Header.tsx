@@ -18,7 +18,7 @@ const bungeeInline = Bungee_Inline({
 })
 
 export default function Header (): JSX.Element {	
-	const isModalOpen = useSelector(selectIsMenuModalOpenValue)
+	const isModalOpen: boolean = useSelector(selectIsMenuModalOpenValue)
 	const dispatch = useDispatch()
 	
 	return (
