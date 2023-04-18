@@ -55,3 +55,24 @@
 .menuNav li:hover {
     color: var(--brand1);
 }
+
+.menuIcon {
+	display: none;
+}
+
+@media (max-width: 1005px) {
+	.menuIcon {
+		display: unset;
+	}
+
+	.divHeader nav {
+		display: none;
+	}
+}
+
+@media (max-width: 680px) {
+	.divHeader h1,
+	.divHeader h1 span {
+		font-size: 40px;
+	}
+}

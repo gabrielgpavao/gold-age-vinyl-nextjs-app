@@ -2,6 +2,7 @@ import { heavyMetal, reset, rockClassics, softRock } from '@/slices/filterByCate
 import styles from '@/styles/components/Header/header.module.scss'
 import { Inter, Bungee_Inline } from 'next/font/google'
 import { useDispatch } from 'react-redux'
+import { FiMenu } from 'react-icons/fi'
 
 const inter = Inter({
 	subsets: ['latin'],
@@ -29,6 +30,7 @@ export default function Header (): JSX.Element {
 						<li onClick={() => { dispatch(heavyMetal()) }}>Heavy Metal</li>
 					</ul>
 				</nav>
+				<FiMenu className={styles.menuIcon} size={36}/>
 			</div>
 		</header>
 	)
