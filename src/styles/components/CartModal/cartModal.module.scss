@@ -6,6 +6,7 @@
 	justify-content: center;
 	position: fixed;
 	inset: 0;
+	z-index: 10;
 	background-color: #0000006b;
 }
 
@@ -48,6 +49,7 @@
 .cart > div span {
 	font-size: 20px;
 	font-weight: 600;
+	cursor: pointer;
 }
 
 .cartInfo {

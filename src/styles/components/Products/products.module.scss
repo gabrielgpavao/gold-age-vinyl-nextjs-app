@@ -26,12 +26,13 @@
 	height: 35px;
 	border-radius: 5px;
 	background-color: var(--brand1);
+	position: relative;
 }
 
 .container span {
 	position: absolute;
-	right: 34px;
-	bottom: -12px;
+	right: 25px;
+	bottom: 22px;
 	padding: 3px 6px;
 	font-weight: 500;
 	border-radius: 100%;
