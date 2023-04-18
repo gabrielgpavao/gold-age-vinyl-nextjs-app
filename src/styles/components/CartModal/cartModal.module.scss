@@ -59,6 +59,22 @@
     overflow-y: auto;
 }
 
+.cart ul::-webkit-scrollbar {
+	width: 10px;
+}
+
+.cart ul::-webkit-scrollbar-track {
+	background: var(--grey2);
+}
+
+.cart ul::-webkit-scrollbar-thumb {
+	background: #555; 
+}
+
+.cart ul::-webkit-scrollbar-thumb:hover {
+	background: #888;
+}
+
 .cartProduct {
     background-color: rgb(24 26 27);
     display: flex;
