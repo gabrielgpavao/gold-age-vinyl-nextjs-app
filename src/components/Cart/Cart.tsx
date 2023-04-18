@@ -16,7 +16,7 @@ export default function Cart ():JSX.Element {
 
     return (
         <aside className={`${inter.className} ${styles.cart}`}>
-            <h2 className={styles.cartTitle}>Carrinho de compras</h2>
+            <h2 className={styles.cartTitle}>Carrinho <span>de compras</span></h2>
 
             <div>
 				{

@@ -1,6 +1,6 @@
 .productCard{
     width: 252px;
-    height: 460px;
+    max-height: 460px;
     padding: 16px;
     border-radius: 7px;
     background-color: rgb(24 26 27);
@@ -79,4 +79,18 @@
 
 .addToCartButton:hover{
     background-color: #b16b00;
+}
+
+@media (max-width: 540px) {
+	.productCard {
+		padding: 25px;
+		width: fit-content;
+		max-height: unset;
+	}
+}
+
+@media (max-width: 540px) {
+	.productCard {
+		padding: 15px;
+	}
 }

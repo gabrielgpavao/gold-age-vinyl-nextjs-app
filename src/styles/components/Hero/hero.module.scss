@@ -2,6 +2,7 @@
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
+	padding: 0 0.6rem;
 }
 
 .backgroundImg {
@@ -12,13 +13,13 @@
 
 .backgroundColor {
     width: 100%;
-    height: 400px;
+    min-height: 400px;
     background-color: rgb(112 84 0 / 50%);
 }
 
 .introText {
     max-width: 450px;
-    padding-top: 30px;
+    padding: 30px 0;
 }
 
 .introText p {

@@ -2,6 +2,7 @@
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
+	padding: 0 0.6rem;
 }
 
 .header {
@@ -53,4 +54,60 @@
 
 .menuNav li:hover {
     color: var(--brand1);
+}
+
+.menuIcon {
+	display: none;
+}
+
+@media (max-width: 1005px) {
+	.menuIcon {
+		display: unset;
+	}
+
+	.divHeader nav {
+		display: none;
+	}
+}
+
+@media (max-width: 680px) {
+	.divHeader h1,
+	.divHeader h1 span {
+		font-size: 40px;
+	}
+}
+
+@media (max-width: 540px) {
+	.divHeader h1,
+	.divHeader h1 span {
+		font-size: 36px;
+	}
+}
+
+@media (max-width: 430px) {
+	.divHeader {
+		gap: 55px;
+	}
+
+	.divHeader h1,
+	.divHeader h1 span {
+		display: block;
+		font-size: 32px;
+	}
+}
+
+@media (max-width: 295px) {
+	.divHeader h1,
+	.divHeader h1 span {
+		display: block;
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 274px) {
+	.divHeader h1,
+	.divHeader h1 span {
+		display: block;
+		font-size: 25px;
+	}
 }
