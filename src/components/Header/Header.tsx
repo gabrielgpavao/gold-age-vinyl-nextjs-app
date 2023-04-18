@@ -1,8 +1,10 @@
-import { heavyMetal, reset, rockClassics, softRock } from '@/slices/filterByCategory.slice'
 import styles from '@/styles/components/Header/header.module.scss'
 import { Inter, Bungee_Inline } from 'next/font/google'
-import { useDispatch } from 'react-redux'
 import { FiMenu } from 'react-icons/fi'
+import FilterOptions from './FilterOptions/FilterOptions'
+import MenuDropdown from './MenuDropdown/MenuDropdown'
+import { openModal, selectIsMenuModalOpenValue } from '@/slices/isMenuModalOpen.slice'
+import { useDispatch, useSelector } from 'react-redux'
 
 const inter = Inter({
 	subsets: ['latin'],
@@ -15,23 +17,25 @@ const bungeeInline = Bungee_Inline({
 	style: 'normal'
 })
 
-export default function Header (): JSX.Element {
+export default function Header (): JSX.Element {	
+	const isModalOpen = useSelector(selectIsMenuModalOpenValue)
 	const dispatch = useDispatch()
 	
 	return (
-		<header className={`${styles.header} ${inter.className}`}>
-			<div className={`${styles.divHeader} ${styles.container}`}>
-				<h1 className={bungeeInline.className}><span className={bungeeInline.className}>Gold</span> Age Vinyl</h1>
-				<nav>
-					<ul className={`${styles.menuNav} ${inter.className}`}>
-						<li onClick={() => { dispatch(reset()) }}>Todos</li>
-						<li onClick={() => { dispatch(rockClassics()) }}>Rock Classics</li>
-						<li onClick={() => { dispatch(softRock()) }}>Soft Rock</li>
-						<li onClick={() => { dispatch(heavyMetal()) }}>Heavy Metal</li>
-					</ul>
-				</nav>
-				<FiMenu className={styles.menuIcon} size={36}/>
-			</div>
-		</header>
+		<>
+			<header className={`${styles.header} ${inter.className}`}>
+				<div className={`${styles.divHeader} ${styles.container}`}>
+					<h1 className={bungeeInline.className}><span className={bungeeInline.className}>Gold</span> Age Vinyl</h1>
+					<FilterOptions/>
+					<FiMenu
+						onClick={() => { dispatch(openModal()) }}
+						className={styles.menuIcon}
+						size={36}
+					/>
+				</div>
+			</header>
+			
+			{ isModalOpen && <MenuDropdown/>}
+		</>
 	)
 }

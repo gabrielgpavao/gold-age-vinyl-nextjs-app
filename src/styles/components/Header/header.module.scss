@@ -32,12 +32,12 @@
     color: var(--brand2);
 }
 
-.menuNav {
+.divHeader ul {
     gap: 40px;
     display: flex;
 }
 
-.menuNav .highlight {
+.divHeader ul .highlight {
     font-weight: 700;
     color: #fff;
 }
@@ -46,18 +46,19 @@
     color: var(--brand1);
 }
 
-.menuNav li {
+.divHeader ul li {
     font-weight: 500;
     font-size: 17px;
     cursor: pointer;
 }
 
-.menuNav li:hover {
+.divHeader ul li:hover {
     color: var(--brand1);
 }
 
 .menuIcon {
 	display: none;
+	cursor: pointer;
 }
 
 @media (max-width: 1005px) {
@@ -65,7 +66,7 @@
 		display: unset;
 	}
 
-	.divHeader nav {
+	.divHeader ul {
 		display: none;
 	}
 }
