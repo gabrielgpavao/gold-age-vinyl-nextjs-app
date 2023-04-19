@@ -1,13 +1,13 @@
 import { RootState } from '@/store'
 import { PayloadAction, createSlice } from '@reduxjs/toolkit'
-import { iProductData } from '@/database';
+import { iProductData, database } from '@/database';
 
 export interface iProductsListState {
   	payload: Array<iProductData>;
 }
 
 const initialState: iProductsListState = {
-  	payload: []
+  	payload: database
 }
 
 export const productsListSlice = createSlice({
