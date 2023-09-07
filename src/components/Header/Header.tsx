@@ -1,3 +1,4 @@
+// import React from 'react'
 import styles from '@/styles/components/Header/header.module.scss'
 import { Inter, Bungee_Inline } from 'next/font/google'
 import { FiMenu } from 'react-icons/fi'
